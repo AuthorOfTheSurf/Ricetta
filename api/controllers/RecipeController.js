@@ -5,9 +5,6 @@
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 
-var uuid = require('uuid').v4
-
-
 var service = require('../services/RecipeService');
 var Recipe = require('../schema/Recipe');
 
@@ -40,7 +37,6 @@ module.exports = {
    */
   NewRecipe: function(req, res) {
     Recipe.validateNew({
-      uuid: uuid(),
       author: "socash",
       image: "http://ricetta.io/",
       url: "http://test.io",

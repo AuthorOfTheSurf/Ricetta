@@ -1,4 +1,5 @@
 var Joi = require('joi');
+var uuid = require('uuid').v4;
 
 var ONE_DAY_IN_MINUTES = 1440;
 var AT_LEAST_2_TAGS = Joi.array().items(Joi.string()).min(2);
@@ -26,7 +27,7 @@ var schema = Joi.object().keys({
 
 var Recipe = function(obj) {
   return {
-    uuid:            obj.uuid || undefined,
+    uuid:            obj.uuid || uuid(),
     author:          obj.author || undefined,
     image:           obj.image || "",
     url:             obj.url || undefined,
