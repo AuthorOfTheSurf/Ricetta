@@ -36,7 +36,9 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'get /json': 'StaticTestController.json'
+  'get  /json':     'StaticTestController.json',
+  'get  /recipes':  'RecipeController.GetRecipe',
+  'post /recipes':  'RecipeController.NewRecipe'
 
   /***************************************************************************
   *                                                                          *
