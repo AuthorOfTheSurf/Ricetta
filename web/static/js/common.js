@@ -2,7 +2,8 @@ require.config({
     baseUrl: 'static/js',
 
     paths: {
-        'marionette': 'vendor/backbone/marionette'
+        // looks like this one has wreqr and babysitter integration. Sweet.
+        'marionette': 'vendor/bower_components/marionette/lib/backbone.marionette'
     },
 
     packages: [
@@ -11,17 +12,17 @@ require.config({
             name: 'app'
         },
         {
-            location: 'jquery',
+            location: 'vendor/bower_components/jquery/dist/jquery',
             name: 'jquery',
             main: 'jquery'
         },
         {
-            location: 'vendor/backbone',
+            location: 'vendor/bower_components/backbone/backbone',
             name: 'backbone',
             main: 'backbone'
         },
         {
-            location: 'vendor/hbs',
+            location: 'vendor/bower_components/hbs',
             name: 'hbs',
             main: 'hbs'
         }
@@ -29,8 +30,10 @@ require.config({
 
     map: {
         '*': {
-            'underscore': 'vendor/underscore/lodash',
-            'handlebars': 'hbs/handlebars'
+            'underscore': 'vendor/bower_components/lodash/lodash',
+            // hbs has a very outdated Node version of handlebars
+            // use the actual handlebars instead.
+            'handlebars': 'vendor/bower_components/underscore/underscore'
         }
     },
 
