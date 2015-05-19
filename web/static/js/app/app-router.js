@@ -1,5 +1,5 @@
 define(function (require, exports, module) {
-    var Marionette = reqiure('marionette')
+    var Marionette = require('marionette')
     var AppController = require('app/app-controller').AppController
 
     var AppRouter = Marionette.AppRouter.extend({

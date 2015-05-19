@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     var Marionette = require('marionette')
 
-    var Ricetta = new Marionette.Application.extend({
+    var Ricetta = Marionette.Application.extend({
         initialize: function (options) {}
     })
 
