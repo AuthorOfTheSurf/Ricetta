@@ -1,8 +1,8 @@
 define(function (require, exports, module) {
-    var marionette = require('marionette')
-    var handlebars = require('handlebars')
+    var Marionette = require('marionette')
+    var Handlebars = require('handlebars')
 
-    marionette.TemplateCache.prototype.compileTemplate = function (rawTemplate) {
-        return handlebars.compile(rawTemplate)
+    Marionette.TemplateCache.prototype.compileTemplate = function (rawTemplate) {
+        return Handlebars.compile(rawTemplate)
     }
 })
