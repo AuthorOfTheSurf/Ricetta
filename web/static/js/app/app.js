@@ -8,8 +8,9 @@ define(function (require, exports, module) {
     var app = new Ricetta()
 
     app.addRegions({
-        mainRegion: '#mainRegion'
-        headerRegion: '#headerRegion'
+        mainRegion: '#mainRegion',
+        headerRegion: '#headerRegion',
+        footerRegion: '#footerRegion'
     })
 
     app.addInitializer(function() {

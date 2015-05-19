@@ -13,9 +13,12 @@ html
         link(rel='stylesheet' type='text/css' href='static/sass/style.css')
         
         //- scripts and such
-        script(type='text/javascript' src='static/js/vendor/bower_components/require/build/require.js')
+        script(type='text/javascript' src='static/js/vendor/bower_components/requirejs/require.js')
     body
-        
+        header#headerRegion
+        main#mainRegion
+        footer#footerRegion
+
         //- onward! TO MARIONETTE!
         script.
             require(['static/js/common'], function (common) {

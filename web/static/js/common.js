@@ -12,12 +12,12 @@ require.config({
             name: 'app'
         },
         {
-            location: 'vendor/bower_components/jquery/dist/jquery',
+            location: 'vendor/bower_components/jquery/dist',
             name: 'jquery',
             main: 'jquery'
         },
         {
-            location: 'vendor/bower_components/backbone/backbone',
+            location: 'vendor/bower_components/backbone',
             name: 'backbone',
             main: 'backbone'
         },

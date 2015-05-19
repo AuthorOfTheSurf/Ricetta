@@ -6,9 +6,12 @@
     <meta name="theme-color" content="#ffffff">
     <title>Ricetta.io</title>
     <link rel="stylesheet" type="text/css" href="static/sass/style.css">
-    <script type="text/javascript" src="static/js/vendor/bower_components/require/build/require.js"></script>
+    <script type="text/javascript" src="static/js/vendor/bower_components/requirejs/require.js"></script>
   </head>
   <body>
+    <header id="headerRegion"></header>
+    <main id="mainRegion"></main>
+    <footer id="footerRegion"></footer>
     <script>
       require(['static/js/common'], function (common) {
           require(['main'])
