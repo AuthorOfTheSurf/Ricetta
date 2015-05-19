@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        //- meta tags go here
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width,initial-scale=1,user-scalable=no')
+        meta(name='theme-color' content='#ffffff')
+
+        //- title of the page
+        title Ricetta.io
+
+        //- links and other stylesheets
+        link(rel='stylesheet' type='text/css' href='static/sass/style.css')
+        
+        //- scripts and such
+        script(type='text/javascript' src='static/vendor/require/require.js')
+    body
+        
+        //- onward! TO MARIONETTE!
+        script.
+            require(['static/js/common'], function (common) {
+                require(['main'])
+            })
