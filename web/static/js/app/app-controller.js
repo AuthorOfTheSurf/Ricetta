@@ -19,8 +19,18 @@ define(function (require, exports, module) {
                 this.app.session = app.session
             }
         },
+        
         index: function() {
-            if (this.app.session.hasAuth()) { this.index(); }
-        }
+            if (this.app.session.hasAuth()) { this.showHomeLayout(); }
+            else {
+                this.app.mainRegion.show(new LandingLayout({
+                    session: this.app.session
+                }))
+            }
+        },
+
+        showHomeLayout: function() {},
+        showCurator: function() {}
     })
+    exports.AppController = AppController
 })
