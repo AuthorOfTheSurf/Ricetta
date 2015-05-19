@@ -6,6 +6,10 @@ define(function (require, exports, module) {
 
     app.AppRouter = new AppRouter()
 
+    app.on('start', function() {
+        console.log('Ricetta is a go!')
+    })
+
     $(document).ready(function() {
         app.start()
     })
