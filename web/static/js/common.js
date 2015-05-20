@@ -22,7 +22,7 @@ require.config({
             main: 'backbone'
         },
         {
-            location: 'vendor/bower_components/hbs',
+            location: 'vendor/bower_components/hbs/hbs',
             name: 'hbs',
             main: 'hbs'
         }

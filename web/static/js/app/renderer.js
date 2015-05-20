@@ -3,6 +3,7 @@ define(function (require, exports, module) {
     var Handlebars = require('handlebars')
 
     Marionette.TemplateCache.prototype.compileTemplate = function (rawTemplate) {
+        console.log(rawTemplate)
         return Handlebars.compile(rawTemplate)
     }
 })

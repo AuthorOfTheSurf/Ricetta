@@ -4,33 +4,23 @@ define(function (require, exports, module) {
     var app = require('app/app')
     var $ = require('jquery')
 
+    var HeaderView = require('app/views/headerRegion').HeaderView
+    var User = require('app/models/user').User
+
     var AppController = Marionette.Controller.extend({
         initialize: function() {
             this.app = app
-            // this.app.session = new Session({}, {
-            //     remote: false
-            // })
-            // if (this.app.sesstion.has('token')) {
-            //     $.ajaxSetup({
-            //         headers: {
-            //             'Authorization': this.app.session.get('token')
-            //         }
-            //     })
-            //     this.app.session = app.session
-            // }
         },
 
         index: function() {
-            // if (this.app.session.hasAuth()) { this.showHomeLayout(); }
-            // else {
-            //     this.app.mainRegion.show(new LandingLayout({
-            //         session: this.app.session
-            //     }))
-            // }
-        }//,
+            this.showNavBar()
+        },
 
-        // showHomeLayout: function() {},
-        // showCurator: function() {}
+        showNavBar: function() {
+            this.app.headerRegion.show(new HeaderView({
+                user: 'Login'
+            }))
+        }
     })
 
     exports.AppController = AppController

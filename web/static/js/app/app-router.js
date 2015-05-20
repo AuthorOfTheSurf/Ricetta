@@ -5,9 +5,7 @@ define(function (require, exports, module) {
     var AppRouter = Marionette.AppRouter.extend({
         controller: new AppController(),
         appRoutes: {
-            '': 'index',
-            // 'Home': 'showHomeLayout',
-            // 'Curator': 'showCurator'
+            '': 'index'
         }
     })
 
