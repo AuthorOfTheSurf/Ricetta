@@ -1,15 +1,15 @@
 define(function (require, exports, module) {
     var Marionette = require('marionette')
     var template = require('hbs!../templates/headerRegion')
-    var User = require('app/models/user').User
+    // var handle = require('app/models/user').handle
 
-    var HeaderView = Marionette.ItemView.extend({
-        model: User,
+    var headerView = Marionette.ItemView.extend({
+        // model: handle,
         template: template,
         initialize: function(options) {
-            this.User = options.User
+            this.handle = options.handle
         }
     })
 
-    exports.HeaderView = HeaderView
+    exports.headerView = headerView
 })

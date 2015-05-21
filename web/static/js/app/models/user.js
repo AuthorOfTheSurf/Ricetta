@@ -1,11 +1,13 @@
 define(function (require, exports, module) {
     var Backbone = require('backbone')
 
-    var User = Backbone.Model.extend({
+    var handle = Backbone.Model.extend({
         defaults: {
-            Handle: 'Login'
-        }
+            handle: 'Login',
+            token: null
+        },
+        initialize: function() {}
     })
 
-    exports.User = User
+    exports.handle = handle
 })
