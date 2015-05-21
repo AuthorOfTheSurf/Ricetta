@@ -17,7 +17,9 @@ define(function (require, exports, module) {
         },
 
         showNavBar: function() {
-            this.app.headerRegion.show(new HeaderView())
+            this.app.headerRegion.show(new HeaderView({
+                User: 'Login'
+            }))
         }
     })
 
