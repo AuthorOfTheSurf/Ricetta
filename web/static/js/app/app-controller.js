@@ -4,8 +4,8 @@ define(function (require, exports, module) {
     var app = require('app/app')
     var $ = require('jquery')
 
-    var HeaderView = require('app/views/headerRegion').HeaderView
     var User = require('app/models/user').User
+    var HeaderView = require('app/views/headerView').HeaderView
 
     var AppController = Marionette.Controller.extend({
         initialize: function() {
@@ -17,9 +17,7 @@ define(function (require, exports, module) {
         },
 
         showNavBar: function() {
-            this.app.headerRegion.show(new HeaderView({
-                user: 'Login'
-            }))
+            this.app.headerRegion.show(new HeaderView())
         }
     })
 
