@@ -1,0 +1,17 @@
+{
+  "name": "Ricetta",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jadengore/Ricetta",
+  "authors": [
+    "jadengore"
+  ],
+  "main": "index.jade",
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
