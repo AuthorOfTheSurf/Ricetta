@@ -1,13 +1,9 @@
 * {
   box-sizing: border-box;
-  font-weight: 300; }
+  font-family: "San Francisco Display", sans-serif; }
 
 body, main, figure {
   margin: 0; }
-
-a {
-  text-decoration: none;
-  color: #fff; }
 
 ul {
   list-style: none;
@@ -18,28 +14,46 @@ ul {
   display: -webkit-flex;
   justify-content: center;
   -webkit-justify-content: center;
-  align-items: flex-start;
-  -webkit-align-items: flex-start;
+  align-items: center;
+  -webkit-align-items: center;
   flex-direction: row;
   -webkit-flex-direction: row; }
 
 li {
-  padding: 0 15px; }
+  padding: 0 30px; }
+  li:first-child {
+    padding-left: 0; }
+
+.constraints {
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  margin: 0 auto; }
 
 #headerRegion {
+  font-weight: 300;
   padding: 15px;
   background: #4BB0DA;
-  color: #fff;
   font-size: 20px; }
-  #headerRegion div {
-    position: relative;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    align-items: center;
-    -webkit-align-items: center;
-    flex-direction: row;
-    -webkit-flex-direction: row; }
+  #headerRegion .constraints h3 {
+    font-weight: 500;
+    margin: 0;
+    padding: 0; }
+  #headerRegion .constraints a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.1s linear;
+    -webkit-transition: color 0.1s linear; }
+    #headerRegion .constraints a:hover {
+      color: #fff; }
+  #headerRegion .constraints .undim {
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
