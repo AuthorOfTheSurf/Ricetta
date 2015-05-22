@@ -62,6 +62,7 @@ li {
     color: #fff; }
 
 .titler:before {
+  font-family: serif;
   text-align: center;
   content: "Я";
   padding: 8px 15px;
