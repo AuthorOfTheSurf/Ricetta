@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: "San Francisco Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out; }
 
